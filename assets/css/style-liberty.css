@@ -10857,6 +10857,14 @@ a.text-light:focus {
   color: #343a40 !important;
 }
 
+.tabtle-dark {
+  color: #fff !important;
+}
+
+.tabtle-light {
+  color: #1e1b32 !important;
+}
+
 a.text-dark:hover,
 a.text-dark:focus {
   color: #121416 !important;
