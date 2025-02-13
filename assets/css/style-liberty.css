@@ -10857,14 +10857,6 @@ a.text-light:focus {
   color: #343a40 !important;
 }
 
-.tabtle-dark {
-  color: #fff !important;
-}
-
-.tabtle-light {
-  color: #1e1b32 !important;
-}
-
 a.text-dark:hover,
 a.text-dark:focus {
   color: #121416 !important;
@@ -13089,7 +13081,7 @@ a.btn.btn-style.btn-style-normal {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-  color: #101d29;
+  color: #606d79;
   margin: 0 35px 0px 0px;
 }
 

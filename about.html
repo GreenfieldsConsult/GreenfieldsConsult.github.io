@@ -124,7 +124,7 @@
     <section class="w3l-text-6 py-5" id="about">
         <div class="text-6-mian py-md-5 py-4">
             <div class="container">
-                <div class="row top-cont-grid align-items-center">
+                <div class="row top-cont-grid">
                     <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last">
                         <img src="assets/images/about1.jpg" alt="" class="img-responsive img-fluid" />
                         <div class="row mt-3">
@@ -139,13 +139,31 @@
                     <div class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
                         <!-- <h5 class="small-title-2">About Us</h5> -->
                         <h3 class="title-style-2 mb-3">Everything. Everywhere. GreenFields.</h3>
-                        <p>We Build GreenFields with IT—Where Innovation Meets Possibility
-                            Founded in 1997, GreenFields Consultancy was created with a bold vision: to empower businesses everywhere with cutting-edge IT solutions. We believe that technology has the power to transform industries, streamline operations, and turn ambitious ideas into reality.</p>
-                        <p class="mt-4">From AI and blockchain to cloud (DevOps) and software development, we provide customized strategies that help companies thrive in a fast-changing digital world. Our expertise spans across industries and geographies, ensuring that no matter where you are or what you need, we can work together to achieve your goals.</p>
-                        <p class="mt-4"> At GreenFields, we operate with a simple yet powerful philosophy—Everything, Everywhere, Everyone. Whether you're a startup looking to scale or an enterprise seeking optimization, we collaborate in any form necessary to bring your vision to life. Our mission is more than just delivering IT solutions; it’s about building a future where technology creates limitless opportunities. Imagine everything, and we’ll help you make it happen. </p>
-                        <p class="mt-4">Let’s create your GreenFields together.</p>
-                        <!--<a href="services.html" class="btn btn-style mt-lg-5 mt-4">Learn More</a>-->
+                        <div id="shortAbout">
+                            <p><b>We Build GreenFields with IT Technology.<br>Imagine everything, and we help you bring your dream to reality.</b></p>
+                            <p class="mt-4">Founded in 1997, GreenFields Consultancy was created with a bold vision: to empower businesses everywhere with cutting-edge IT solutions. We believe that technology has the power to transform industries, streamline operations, and turn ambitious ideas into reality. From AI and blockchain to cloud (DevOps) and software development, we provide customized strategies that help companies thrive in a fast-changing digital world. Our expertise spans across industries and geographies, ensuring that no matter where you are or what you need, we can work together to achieve your goals.</p>
+                            <a onclick="showDetail()" class="btn btn-style mt-md-5 mt-4" aria-hidden="true" style="color:white">Details</a>
+                        </div>
+                        <div id="longAbout" style="display: none;">
+                            <p><b>We Build GreenFields with IT Technology.<br>Imagine everything, and we help you bring your dream to reality.</b></p>
+                            <p class="mt-4">Founded in 1997, GreenFields Consultancy was created with a bold vision: to empower businesses everywhere with cutting-edge IT solutions. We believe that technology has the power to transform industries, streamline operations, and turn ambitious ideas into reality. From AI and blockchain to cloud (DevOps) and software development, we provide customized strategies that help companies thrive in a fast-changing digital world. Our expertise spans across industries and geographies, ensuring that no matter where you are or what you need, we can work together to achieve your goals.</p>
+                            <p class="mt-4">At GreenFields, we operate with a simple yet powerful philosophy—Everything, Everywhere, Everyone. Whether you're a startup looking to scale or an enterprise seeking optimization, we collaborate in any form necessary to bring your vision to life. Our mission is more than just delivering IT solutions; it’s about building a future where technology creates limitless opportunities. Imagine everything, and we’ll help you make it happen.</p>
+                            <p class="mt-4">We believe that technology should adapt to your needs, not the other way around. That’s why we focus on building flexible, scalable, and future-ready solutions. Our team of experts doesn’t just implement technology—we craft experiences that drive efficiency and growth. Success in the digital world requires more than just tools; it requires strategy, execution, and continuous evolution. At GreenFields, we stay ahead of the curve so that our clients can lead in their industries. We embrace challenges, turning obstacles into stepping stones for innovation.</p>
+                            <p class="mt-4">Collaboration is at the heart of what we do. We don’t just work for our clients—we work with them. By understanding your unique goals and challenges, we create solutions that align with your long-term vision. With decades of experience and a forward-thinking mindset, we bridge the gap between today’s possibilities and tomorrow’s breakthroughs. Every project we take on is an opportunity to make an impact, push boundaries, and redefine what’s possible.</p>
+                            <p class="mt-4">In a world where change is the only constant, GreenFields is your trusted partner in navigating the digital landscape. Let’s shape the future together—one innovation at a time.</p>
+                            <a onclick="hideDetail()" class="btn btn-style mt-md-5 mt-4" aria-hidden="true" style="color:white">Hide</a>
+                        </div>
                     </div>
+                    <script>
+                        function showDetail() {
+                            document.getElementById("longAbout").style.display = "block";
+                            document.getElementById("shortAbout").style.display = "none";
+                        }
+                        function hideDetail() {
+                            document.getElementById("longAbout").style.display = "none";
+                            document.getElementById("shortAbout").style.display = "block";
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -416,10 +434,10 @@
                                             <span class="fab fa-facebook-f"></span>
                                         </a>
                                         <a class="twitter mx-2" href="#twitter">
-                                            <span class="fab fa-twitter"></span>
+                                            <span class="fab fa-linkedin-in"></span>
                                         </a>
                                         <a class="google" href="#google-plus">
-                                            <span class="fab fa-google-plus-g"></span>
+                                            <span class="fab fa-envelope"></span>
                                         </a>
                                     </div>
                                 </div>
@@ -618,7 +636,7 @@
 
     <!-- Js scripts -->
     <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
+    <button onclick="topFunction()" id="movetop" title="Go to top" style="display: none;">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
     </button>
     <script>
