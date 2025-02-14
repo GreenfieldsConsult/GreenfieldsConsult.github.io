@@ -142,7 +142,7 @@
                         <div id="shortAbout">
                             <p><b>We Build GreenFields with IT Technology.<br>Imagine everything, and we help you bring your dream to reality.</b></p>
                             <p class="mt-4">Founded in 1997, GreenFields Consultancy was created with a bold vision: to empower businesses everywhere with cutting-edge IT solutions. We believe that technology has the power to transform industries, streamline operations, and turn ambitious ideas into reality. From AI and blockchain to cloud (DevOps) and software development, we provide customized strategies that help companies thrive in a fast-changing digital world. Our expertise spans across industries and geographies, ensuring that no matter where you are or what you need, we can work together to achieve your goals.</p>
-                            <a onclick="showDetail()" class="btn btn-style mt-md-5 mt-4" aria-hidden="true" style="color:white">Details</a>
+                            <a onclick="showMore()" class="btn btn-style mt-md-5 mt-4" aria-hidden="true" style="color:white">More</a>
                         </div>
                         <div id="longAbout" style="display: none;">
                             <p><b>We Build GreenFields with IT Technology.<br>Imagine everything, and we help you bring your dream to reality.</b></p>
@@ -151,15 +151,15 @@
                             <p class="mt-4">We believe that technology should adapt to your needs, not the other way around. That’s why we focus on building flexible, scalable, and future-ready solutions. Our team of experts doesn’t just implement technology—we craft experiences that drive efficiency and growth. Success in the digital world requires more than just tools; it requires strategy, execution, and continuous evolution. At GreenFields, we stay ahead of the curve so that our clients can lead in their industries. We embrace challenges, turning obstacles into stepping stones for innovation.</p>
                             <p class="mt-4">Collaboration is at the heart of what we do. We don’t just work for our clients—we work with them. By understanding your unique goals and challenges, we create solutions that align with your long-term vision. With decades of experience and a forward-thinking mindset, we bridge the gap between today’s possibilities and tomorrow’s breakthroughs. Every project we take on is an opportunity to make an impact, push boundaries, and redefine what’s possible.</p>
                             <p class="mt-4">In a world where change is the only constant, GreenFields is your trusted partner in navigating the digital landscape. Let’s shape the future together—one innovation at a time.</p>
-                            <a onclick="hideDetail()" class="btn btn-style mt-md-5 mt-4" aria-hidden="true" style="color:white">Hide</a>
+                            <a onclick="hideMore()" class="btn btn-style mt-md-5 mt-4" aria-hidden="true" style="color:white">Hide</a>
                         </div>
                     </div>
                     <script>
-                        function showDetail() {
+                        function showMore() {
                             document.getElementById("longAbout").style.display = "block";
                             document.getElementById("shortAbout").style.display = "none";
                         }
-                        function hideDetail() {
+                        function hideMore() {
                             document.getElementById("longAbout").style.display = "none";
                             document.getElementById("shortAbout").style.display = "block";
                         }
